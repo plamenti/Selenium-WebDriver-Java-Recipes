@@ -39,4 +39,8 @@ public class Browser {
 	public static void navigate(String url) {
 		driver.get(url);
 	}
+	
+	public static String title() {
+		return driver.getTitle();
+	}
 }
