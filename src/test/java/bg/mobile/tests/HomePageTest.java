@@ -1,10 +1,12 @@
-package com.plamenti;
+package bg.mobile.tests;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.plamenti.Browser;
 
 import bg.mobile.Pages;
 
