@@ -43,4 +43,8 @@ public class Browser {
 	public static String title() {
 		return driver.getTitle();
 	}
+	
+	public static void close() {
+		driver.close();
+	}
 }
