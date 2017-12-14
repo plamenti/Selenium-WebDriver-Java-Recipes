@@ -35,16 +35,20 @@ public class Browser {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+	
+	public static WebDriver getDriver() {
+		return driver;
+	}
 
 	public static void navigate(String url) {
-		driver.get(url);
+		getDriver().get(url);
 	}
 	
 	public static String title() {
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 	
 	public static void close() {
-		driver.close();
+		getDriver().close();
 	}
 }

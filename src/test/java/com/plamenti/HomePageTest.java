@@ -23,5 +23,7 @@ public class HomePageTest {
 	@Test
 	public void verifyHomePage() {
 		assertTrue(Pages.homePage().isCorrectTitle());
+		assertTrue(Pages.homePage().isEditButtonPresent());
+		assertTrue(Pages.homePage().isAddButtonPresent());
 	}
 }
